@@ -8,17 +8,17 @@ import Error from './components/error';
 import Navigation from './components/navigation';
 
 function App() {
-  return (
-    <BrowserRouter>
-        <Navigation />
-        <Switch>
+   return (
+      <BrowserRouter>
+         <Navigation />
+         <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route component={Error} />
-        </Switch>
-    </BrowserRouter>
-  );
+         </Switch>
+      </BrowserRouter>
+   );
 };
 
 export default App;
